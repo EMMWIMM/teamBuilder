@@ -11,7 +11,9 @@
 --pwdPink: #F2E7EF;
 
 }
-body{background-color: var(--offWhite);}
+body{
+  background-color: var(--offWhite);
+}
 
 .jumbotron {
 background-color: var(--yellow);
@@ -24,6 +26,13 @@ justify-content: center;
 .icon
    {
      font-family:'Bootstrap-icons';
+   }
+   .container{
+     display: flex;
+     flex-flow:wrap;
+   }
+   .card{
+     margin: 10px;
    }
   li{
      color: var(--maroon);
