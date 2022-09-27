@@ -1,0 +1,38 @@
+:root{
+--offWhite:#F7FEEB;
+--lightGreen:#DAF7A6;
+--green:#CCEB94;
+--yellow:#FFC300;
+--purple:#581845;
+--lightPurple: #DAB3CE;
+--lavender:#A46090;
+--maroon:#900C3F;
+--pink:#fe7b7b;
+--pwdPink: #F2E7EF;
+
+}
+body{background-color: var(--offWhite);}
+
+.jumbotron {
+background-color: var(--yellow);
+justify-content: center;
+}
+
+.display-3 {
+  color: var(--maroon);
+}
+.icon
+   {
+     font-family:'Bootstrap-icons';
+   }
+  li{
+     color: var(--maroon);
+   }
+   .card-header
+   {
+     font-size: 25px;
+     font-weight: bold;
+     background-color:var(--pink);
+     color: var(--pwdPink);
+
+   }
