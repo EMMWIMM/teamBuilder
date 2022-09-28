@@ -45,9 +45,9 @@ inquirer
 .then((response) =>{
   const {teamMember, title, id, email, github} = response
 //
-  const markdown= markdowns.generateMarkdown(response);
-  markdowns.generateMarkdown(response);
-fs.appendFile('index.html', markdown, (err) =>   err ? console.error(err) : console.log(markdown));
+  const markdown = markdowns.generateHTML(response);
+
+fs.writeFile('index.html', markdown, (err) =>   err ? console.error(err) : console.log(markdown));
 
   console.log(markdown);
 
