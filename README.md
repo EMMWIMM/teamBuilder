@@ -1,2 +1,2 @@
 # teamBuilder
-git challenges
+git challenges have been resolved
