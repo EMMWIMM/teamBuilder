@@ -15,9 +15,7 @@ function renderTitleIcon(title) {
 };
 function generateHTML(team){
 
-  return generateHTMLBegining() +
-    generateHTMLCards(team) +
-    generateHTMLEnding();
+  return generateHTMLBegining()+generateHTMLCards(team)+generateHTMLEnding();
 }
 function generateHTMLBegining(){
   return `<!DOCTYPE html>
@@ -38,24 +36,26 @@ function generateHTMLBegining(){
       <header class="jumbotron">
         <h1 class="display-3">My Team</h1>
       </header>
-      <div class="container">`;
+      <div class="container"> 
+      
+      <!-- this is the end of the begining -->`
+      ;
 }
 function generateHTMLEnding(){
-  return `</body>`;
+  return ` <!-- this is the begining of the end --></div> </body>`;
 }
 function generateHTMLCards(team){
-  var resultsString;
+  var resultsString= '';
   team.forEach((emp, i) => {
     resultsString+= generateHTMLCard(emp);
   });
   return resultsString;
 }
 function generateHTMLCard(employee){
-
-  return `
+  return `<!-- this is the begining of a card -->
   <div class="card text-bg-info mb-3" style="max-width: 18rem;">
     <div class="card-header">${employee.getName()} <span class="icon">${employee.getRole()} `+
-     renderTitleIcon(employee.role)+
+     renderTitleIcon(employee.getRole())+
      `</span> </div>
     <div class="card-body">
       <ul class="list-group list-group-flush">
@@ -64,7 +64,8 @@ function generateHTMLCard(employee){
         <li class="list-group-item">${employee.getExtraStuff()[0]}: ${employee.getExtraStuff()[1]} </li>
       </ul>
     </div>
-  </div>`;
+  </div>
+  <!-- this is the end of the card -->`;
 }
 
 module.exports = {
