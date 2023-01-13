@@ -6,7 +6,7 @@ const util = require('util')
 
 const fs = require('fs');
 const inquirer = require('inquirer');
-const markdowns = require('./utils/generateMarkdown.js');
+const markdowns = require('./src/generateMarkdown.js');
 var icon = "icon";
 
 
@@ -72,7 +72,7 @@ function mainInquirerLoop() {
   inquirer
   .prompt(questions)
   .then((response) =>{
-  
+
     const {teamMember, title, id, email, github} = response;
     let inqEmp;
 
