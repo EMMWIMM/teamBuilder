@@ -14,7 +14,7 @@ function renderTitleIcon(title) {
   return icon
 };
 function generateHTML(team){
-  
+
   return generateHTMLBegining() +
     generateHTMLCards(team) +
     generateHTMLEnding();
@@ -68,6 +68,6 @@ function generateHTMLCard(employee){
 }
 
 module.exports = {
-  generateHTML,
-};
+  generateHTML, renderTitleIcon
+
 };

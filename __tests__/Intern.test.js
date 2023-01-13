@@ -14,7 +14,7 @@ test('validate constructor ', () => {
 
 //test getters
 test('validate getRole', () => {expect(tIntern.getRole()).toBe('Intern')});
-test('validate getScool', () => {expect(tIntern.getGithub()).toBe(tSchool)});
+test('validate getSchool', () => {expect(tIntern.getSchool()).toBe(tSchool)});
 test('validate getExtraStuff', () => {
     expect(tIntern.getExtraStuff()[0]).toBe('School');
     expect(tIntern.getExtraStuff()[1]).toBe(tSchool);
