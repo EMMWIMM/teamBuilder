@@ -83,7 +83,7 @@ function mainInquirerLoop() {
         team.push(inqEmp);
         break;
       case 'Manager':
-        team.push(new Manager(response.teamMember, response.id, response.email, response.officeNumber));
+        team.push(new Manager(response.teamMember, response.id, response.email, response.phone));
         break;
       case 'Engineer':
         team.push(new Engineer(response.teamMember, response.id, response.email, response.github));
@@ -108,4 +108,4 @@ function mainInquirerLoop() {
 mainInquirerLoop();
 
 
-module.exports = index;
+// module.exports = index;
