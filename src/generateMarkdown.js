@@ -68,6 +68,6 @@ function generateHTMLCard(employee){
 }
 
 module.exports = {
-  generateHTML, renderTitleIcon
+  generateHTML
 
 };
